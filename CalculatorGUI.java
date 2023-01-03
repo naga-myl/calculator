@@ -13,11 +13,7 @@ import java.awt.Color;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 
-/** JFrame container is used for adding components 
- * 
- * @author akirit
- *
- */
+
 public class Test {
 
 	private JFrame frmCalculator;
@@ -29,9 +25,7 @@ double result;
 	String operation;
 	String ans;
 	
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -45,16 +39,12 @@ double result;
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+	
 	public Test() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initialize() {
 		frmCalculator = new JFrame();
 		frmCalculator.setTitle("Calculator");
@@ -66,11 +56,7 @@ double result;
 		textField.setBounds(17, 9, 326, 60);
 		textField.setColumns(10);
 
-		/*btn1*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		
 		final JButton btn1 = new JButton("1");
 		btn1.setBounds(33, 223, 50, 29);
@@ -82,11 +68,7 @@ double result;
 			}
 		});
 		
-		/*btn 2*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn2 = new JButton("2");
 		btn2.setBounds(109, 223, 50, 29);
 		btn2.addActionListener(new ActionListener() {
@@ -97,11 +79,7 @@ double result;
 			}
 		});
 		
-		/*btn 3*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn3 = new JButton("3");
 		btn3.setBounds(172, 223, 50, 29);
 		btn3.addActionListener(new ActionListener() 
@@ -112,11 +90,7 @@ double result;
 			}
 		});
 		
-		/*btn 4*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn4 = new JButton("4");
 		btn4.setBounds(33, 174, 50, 29);
 		btn4.addActionListener(new ActionListener() {
@@ -126,11 +100,7 @@ double result;
 			}
 		});
 		
-		/*btn 5*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn5 = new JButton("5");
 		btn5.setBounds(102, 174, 50, 29);
 		btn5.addActionListener(new ActionListener() {
@@ -141,11 +111,7 @@ double result;
 			}
 		});
 		
-		/*btn 6*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn6 = new JButton("6");
 		btn6.setBounds(172, 174, 50, 29);
 		btn6.addActionListener(new ActionListener() {
@@ -156,11 +122,7 @@ double result;
 			}
 		});
 		
-		/*btn 7*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn7 = new JButton("7");
 		btn7.setBounds(33, 133, 50, 29);
 		btn7.addActionListener(new ActionListener() {
@@ -171,11 +133,7 @@ double result;
 			}
 		});
 
-		/*btn 8*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn8 = new JButton("8");
 		btn8.setBounds(102, 133, 50, 29);
 		btn8.addActionListener(new ActionListener() {
@@ -186,11 +144,7 @@ double result;
 			}
 		});
 		
-		/*btn 9*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn9 = new JButton("9");
 		btn9.setBounds(172, 133, 50, 29);
 		btn9.addActionListener(new ActionListener() {
@@ -201,11 +155,7 @@ double result;
 			}
 		});
 		
-		/*btn 0*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+		
 		final JButton btn0= new JButton("0");
 		btn0.setBounds(236, 277, 50, 36);
 		btn0.addActionListener(new ActionListener() {
@@ -216,11 +166,7 @@ double result;
 			}
 		});
 
-        /*btndot*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *    */
+       
 		final JButton btndot = new JButton(".");
 		btndot.setBounds(172, 277, 50, 36);
 		btndot.addActionListener(new ActionListener() {
@@ -232,7 +178,7 @@ double result;
 			
 		});
 		
-		/*btnBackspace*/
+		
 		final JButton btnback = new JButton("BS");
 		btnback.setBounds(102, 81, 50, 29);
 		btnback.addActionListener(new ActionListener() {
@@ -240,12 +186,7 @@ double result;
 				
 				
 				String S=null;
-				/** 
-				 * Checking the length of textField to see if there is data.
-				 * String Builder class is used to modify String without creating a new object
-				 * After obtaining the length String Builder deletCharAt(int index) is used to delete char at specific location
-				 * 
-				 */
+				
 				if(textField.getText().length()>0)
 				{
 					StringBuilder sb=new StringBuilder(textField.getText());
@@ -258,13 +199,7 @@ double result;
 			}
 		});
 		
-		/*btnAdd*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *  Taking first user input and storing the value in a double variable
-		 *  Set operation = "+"
-		 *    */
+		
 		JButton btnAdd = new JButton("+");
 		btnAdd.setBounds(236, 81, 50, 29);
 		btnAdd.addActionListener(new ActionListener() {
@@ -275,14 +210,7 @@ double result;
 			}
 		});
 		
-		/*btnSub*/
 		
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 *  Taking first user input and storing the value in a double variable
-		 *  Set operation = "-"
-		 *    */
 		JButton btnminus = new JButton("-");
 		btnminus.setBounds(172, 81, 50, 29);
 		btnminus.addActionListener(new ActionListener() {
@@ -294,13 +222,7 @@ double result;
 		}
 		});
 		
-		/*btnDiv*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 * Taking first user input and storing the value in a double variable 
-		 *  Set operation = "/"
-		 *    */
+		
 		JButton btnDiv = new JButton("/");
 		btnDiv.setBounds(236, 175, 50, 26);
 		btnDiv.addActionListener(new ActionListener() {
@@ -311,14 +233,6 @@ double result;
 			}
 		});
 	
-		/*btnmul*/
-		
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 * Taking first user input and storing the value in a double variable 
-		 *  Set operation = "*"
-		 *    */
 		JButton btnMul1 = new JButton("*");
 		btnMul1.setBounds(236, 134, 50, 26);
 		btnMul1.addActionListener(new ActionListener() {
@@ -330,15 +244,7 @@ double result;
 			
 		});
 		
-		/*btnequal*/
-		/** Creating a Jbutton using Application Window and setting the position of the button on Jframe using setbounds property  
-		 *  Register the button with ActionListener
-		 *  Handle the event with ActionEvent handling code
-		 * Taking second user input and storing the value in a double variable 
-		 *  Choosing the operation based on user choice
-		 *  After displaying the desired operation output value on JTextField, numeric button components and textfield are  disabled
-		 *  so as to not to enter any extra values in the textfield.
-		 *    */
+		
 		
 		JButton btnequal = new JButton("=");
 		btnequal.setBounds(236, 223, 50, 29);
@@ -444,12 +350,7 @@ double result;
 			}
 		});
 		
-		/**
-		 * After clicking on CE all the disabled buttons and textfield are enabled
-		 * 
-		 */
 		
-		/*btn CE*/
 		final JButton btnCE = new JButton("CE");
 		btnCE.setBounds(27, 81, 49, 29);
 		btnCE.addActionListener(new ActionListener() {
